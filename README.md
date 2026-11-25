@@ -15,7 +15,7 @@ altima.str vende gorras New Era originales: fitted 59FIFTY de colección, edicio
 
 ## Mi tema
 
-**Tema propio:** `altima-str` (versión 1.1), construido desde `tema-base/` con los colores, tipografías y componentes de `DESIGN.md` y del prototipo de Stitch.
+**Tema propio:** `altima-str` (versión 1.3), construido desde `tema-base/` con los colores, tipografías y componentes de `DESIGN.md` y del prototipo de Stitch.
 
 - Código del tema: [`proyecto/mi-tema/`](proyecto/mi-tema/)
 - Tema listo para instalar: [`proyecto/altima-str.zip`](proyecto/altima-str.zip)
@@ -23,7 +23,7 @@ altima.str vende gorras New Era originales: fitted 59FIFTY de colección, edicio
 | Archivo | Qué hace |
 |---|---|
 | `style.css` | Variables de DESIGN.md (café, azul marino, rosa, hueso; Alfa Slab One e Inter) y todos los estilos, incluido el responsive. |
-| `functions.php` | Sin cambios respecto de `tema-base/`: menú, imagen destacada, `title-tag` y carga del CSS. |
+| `functions.php` | Igual que `tema-base/` (menú, imagen destacada, `title-tag` y carga del CSS), con un solo cambio: el CSS se carga con la versión del tema en vez de "0.1", para que el navegador no muestre estilos antiguos después de cada actualización. |
 | `header.php` | Franja de envíos, logo ALTIMA.STR, menú principal con hamburguesa en celular (sin JavaScript) y carga de las fuentes. |
 | `footer.php` | Sellos de confianza, columnas Tienda, Ayuda y altima.str, redes y frase "Pa' usar o pa' guardar." |
 | `front-page.php` | Home: hero del Drop 004, novedades, texto de la página Inicio, últimas entradas y bloque de novedades. |
@@ -70,6 +70,8 @@ altima.str vende gorras New Era originales: fitted 59FIFTY de colección, edicio
 1. *Guía de tallas New Era: cómo elegir tu 59FIFTY sin equivocarte* (categoría Guías)
 2. *59FIFTY, 9FORTY y 9FIFTY: ¿qué gorra New Era es para ti?* (categoría Cultura)
 3. *Cómo cuidar y guardar tus gorras de colección* (categoría Cuidado)
+
+Cada entrada tiene imagen destacada en 16:9 (copias en [`proyecto/documentacion/img/blog/`](proyecto/documentacion/img/blog/)).
 
 ## Formulario de contacto
 
@@ -122,6 +124,7 @@ El objetivo es poder respaldar el sitio y reinstalarlo en cualquier servidor. Se
 - **El formulario seguía mostrándose en inglés después de editarlo:** era la caché de W3 Total Cache. Se soluciona con **Rendimiento > Vaciar todas las cachés** después de cada cambio.
 - **AddToAny ponía botones de compartir en todas las páginas:** en **Ajustes > AddToAny** dejé solo "Mostrar en entradas".
 - **BackWPup no generaba respaldos en InfinityFree** (el historial y los registros quedaban vacíos al pulsar *Iniciar*): el plan gratis bloquea las peticiones internas que el plugin usa para trabajar en segundo plano, y el Softaculous de InfinityFree tampoco ofrece respaldos. Por eso respaldo a mano con phpMyAdmin y el File Manager, y dejo BackWPup listo para el hosting de la etapa 2.
+- **Después de actualizar el tema, el blog seguía con estilos antiguos:** `functions.php` cargaba el CSS siempre con la versión "0.1" y el navegador usaba la copia guardada. Lo cambié para que use la versión del tema (`wp_get_theme()->get( 'Version' )`); ahora basta con subir el número de versión en `style.css`.
 - **Lighthouse marcó fuentes que bloqueaban el render y dos errores de accesibilidad:** los corregí en el tema (ver [`lighthouse.md`](proyecto/documentacion/lighthouse.md)).
 
 ## Cómo me organicé
