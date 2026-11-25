@@ -20,6 +20,7 @@ function mi_tema_configuracion() {
 add_action( 'after_setup_theme', 'mi_tema_configuracion' );
 
 function mi_tema_estilos() {
-	wp_enqueue_style( 'mi-tema-estilo', get_stylesheet_uri(), array(), '0.1' );
+	// Usa la versión del tema (style.css) para que el navegador descargue el CSS nuevo en cada actualización.
+	wp_enqueue_style( 'mi-tema-estilo', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'mi_tema_estilos' );
