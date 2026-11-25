@@ -3,15 +3,15 @@ Theme Name: altima-str
 Theme URI: https://github.com/MasturJrr1/mi_emprendimiento_wp
 Description: Tema propio de altima.str, tienda de gorras New Era originales para la comunidad streetwear en Chile. Construido desde el tema base del curso Sitios Web y Landing Pages (MKA1203, DUOC).
 Author: Ignacio Galindo
-Version: 1.0
+Version: 1.1
 Requires at least: 6.4
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
 Text Domain: altima-str
 */
 
-/* Fuentes del DESIGN.md: Alfa Slab One (títulos) e Inter (textos) */
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;600;700&display=swap");
+/* Fuentes del DESIGN.md: Alfa Slab One (títulos) e Inter (textos).
+   Se cargan en header.php con preconnect y sin bloquear el render. */
 
 /* ==========================================================
    1. VARIABLES — colores, tipografías y espacios de DESIGN.md
@@ -172,17 +172,17 @@ h4 { font-size: 1rem; font-weight: 600; margin: 0 0 8px; }
   align-items: center; justify-content: center;
   border-radius: var(--radio-full);
 }
-.menu-boton span,
-.menu-boton span::before,
-.menu-boton span::after {
+.menu-boton .icono-menu,
+.menu-boton .icono-menu::before,
+.menu-boton .icono-menu::after {
   display: block;
   width: 22px; height: 2px;
   background: var(--color-primario);
   position: relative;
   content: "";
 }
-.menu-boton span::before { position: absolute; top: -7px; }
-.menu-boton span::after { position: absolute; top: 7px; }
+.menu-boton .icono-menu::before { position: absolute; top: -7px; }
+.menu-boton .icono-menu::after { position: absolute; top: 7px; }
 
 /* ==========================================================
    4. BOTONES, ETIQUETAS Y TARJETAS (componentes)
@@ -349,13 +349,16 @@ input[type="submit"]:active { background: var(--color-secundario); border-color:
 }
 .tarjeta-articulo .imagen img { width: 100%; height: 100%; object-fit: cover; }
 .tarjeta-articulo .cuerpo { padding: 16px 18px 20px; }
+.tarjeta-articulo h2,
 .tarjeta-articulo h3 {
   font-family: var(--fuente-texto);
   font-weight: 700;
   font-size: 1.1rem;
   margin: 10px 0 6px;
 }
+.tarjeta-articulo h2 a,
 .tarjeta-articulo h3 a { color: var(--color-primario); text-decoration: none; }
+.tarjeta-articulo h2 a::after,
 .tarjeta-articulo h3 a::after { content: ""; position: absolute; inset: 0; }   /* toda la tarjeta es clickeable */
 .tarjeta-articulo p { color: var(--color-texto-suave); font-size: 14px; margin: 0; }
 
@@ -561,7 +564,7 @@ input:focus, textarea:focus, select:focus { outline: none; border: 2px solid var
   padding: 32px 0;
 }
 .footer-marca .sitio-titulo { color: var(--color-rosa); }
-.footer-columnas h4 { text-transform: uppercase; letter-spacing: .06em; font-size: 14px; }
+.footer-titulo { text-transform: uppercase; letter-spacing: .06em; font-size: 14px; font-weight: 700; margin: 0 0 10px; }
 .footer-columnas ul { list-style: none; margin: 0; padding: 0; }
 .footer-columnas li { margin-bottom: 6px; }
 .redes { display: flex; gap: 10px; margin-top: 14px; }

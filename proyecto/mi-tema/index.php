@@ -24,7 +24,7 @@ get_header();
 						</div>
 						<div class="cuerpo">
 							<?php $cat = get_the_category(); if ( $cat ) : ?><span class="etiqueta"><?php echo esc_html( $cat[0]->name ); ?></span><?php endif; ?>
-							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<p><?php echo esc_html( get_the_date() ); ?></p>
 						</div>
 					</article>

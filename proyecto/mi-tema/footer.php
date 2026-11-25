@@ -27,7 +27,7 @@
 				</div>
 			</div>
 			<div>
-				<h4>Tienda</h4>
+				<p class="footer-titulo">Tienda</p>
 				<ul>
 					<li><a href="<?php echo esc_url( home_url( '/coleccion/' ) ); ?>">Colección</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/coleccion/#fitted' ) ); ?>">Fitted 59FIFTY</a></li>
@@ -36,7 +36,7 @@
 				</ul>
 			</div>
 			<div>
-				<h4>Ayuda</h4>
+				<p class="footer-titulo">Ayuda</p>
 				<ul>
 					<li><a href="<?php echo esc_url( home_url( '/preguntas-frecuentes/' ) ); ?>">Preguntas frecuentes</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/preguntas-frecuentes/#tallas' ) ); ?>">Guía de tallas</a></li>
@@ -44,7 +44,7 @@
 				</ul>
 			</div>
 			<div>
-				<h4>altima.str</h4>
+				<p class="footer-titulo">altima.str</p>
 				<ul>
 					<li><a href="<?php echo esc_url( home_url( '/nosotros/' ) ); ?>">Nosotros</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/preguntas-frecuentes/#autenticidad' ) ); ?>">Autenticidad</a></li>
