@@ -30,7 +30,7 @@ altima.str vende gorras New Era originales: fitted 59FIFTY de colección, edicio
 | `index.php` / `archive.php` | Blog y categorías en grilla de tarjetas 16:9. |
 | `single.php` | Entrada con cabecera azul marino, tiempo de lectura, llamada a consultar stock y navegación. |
 | `page.php` | Páginas (Colección, Nosotros, Preguntas frecuentes, Contacto). |
-| `assets/img/` | Ilustraciones SVG de gorras en los colores de la marca (sin logos de equipos). |
+| `assets/img/` | Fotos de las 8 gorras en WebP (600 × 600 px, entre 5 y 14 KB cada una) e ilustración de respaldo para las entradas sin imagen. |
 
 ### Instrucciones para instalar mi tema en un WordPress limpio
 
@@ -111,7 +111,7 @@ El objetivo es poder respaldar el sitio y reinstalarlo en cualquier servidor. Se
    - **Enlaces permanentes:** entra a **Ajustes > Enlaces permanentes** y pulsa **Guardar** para regenerar el `.htaccess`.
    - **Menú y portada:** revisa **Apariencia > Menús** (ubicación *Menú principal*) y **Ajustes > Lectura** (Inicio y Blog).
    - **Correo:** vuelve a escribir la contraseña de aplicación en WP Mail SMTP (o usa el SMTP del hosting nuevo).
-5. **Probar:** que abran la portada y las 6 páginas sin errores; que se vean las ilustraciones y las fuentes; que el menú funcione en celular; que las 3 entradas aparezcan en el Blog; y enviar un **mensaje de prueba** desde Contacto, confirmando que aparece el aviso de "¡Gracias!", que llega al correo y que queda en Flamingo.
+5. **Probar:** que abran la portada y las 6 páginas sin errores; que se vean las fotos de las gorras y las fuentes; que el menú funcione en celular; que las 3 entradas aparezcan en el Blog; y enviar un **mensaje de prueba** desde Contacto, confirmando que aparece el aviso de "¡Gracias!", que llega al correo y que queda en Flamingo.
 
 **Si solo quieres instalar el tema** en un WordPress nuevo y crear el contenido desde cero, sigue "Instrucciones para instalar mi tema" más arriba.
 

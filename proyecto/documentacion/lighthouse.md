@@ -54,4 +54,6 @@
 | Cargar los scripts de AddToAny y Joinchat solo donde se usan (entradas del blog) | JavaScript sin usar (41 KiB) | Propuesta (etapa 2) | — |
 | Migrar a un hosting pagado con caché de servidor y HTTP/2 | Tiempo de respuesta lento del servidor gratuito | Propuesta (ver `plan-de-continuidad.md`) | — |
 
+**Tercera medición (22:23), después de reemplazar las ilustraciones por fotos reales de las gorras:** Rendimiento 95, Accesibilidad 100, Buenas prácticas 100 y SEO 100 (FCP 1,7 s y LCP 2,7 s). Las fotos no afectaron el puntaje porque las convertí a WebP de 600 × 600 px (entre 5 y 14 KB cada una), con `width` y `height` declarados para que no muevan el diseño y con carga diferida (`loading="lazy"`) salvo la del hero, que lleva `fetchpriority="high"`. Esta optimización es una tercera mejora aplicada.
+
 > Reconozco los límites del hosting gratuito: InfinityFree comparte servidor entre muchos sitios y agrega una verificación de seguridad antes de servir la página, lo que suma tiempo de respuesta que no depende del tema. Por eso el resultado puede variar unos puntos entre mediciones.
