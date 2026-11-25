@@ -1,7 +1,7 @@
 # Decisiones de mi sitio
 
 **Emprendimiento:** altima.str
-**Fecha:** 25 de noviembre · **Última corrección:** (se completa en el checkpoint del 18 nov)
+**Fecha:** 4 de noviembre · **Última corrección:** 24 de noviembre (sitio en producción en [altimastr.free.nf](https://altimastr.free.nf))
 
 ## 1. Plugins (10 pts)
 
@@ -70,8 +70,15 @@ gantt
 
 ## Cambios respecto de la Sumativa 2 (solo en el checkpoint del 18 nov)
 
+**Lo que mantuve:** el tema propio `altima-str` (está activo en producción), la paleta café, azul marino y rosa, las fuentes Alfa Slab One e Inter, Yoast SEO, Contact Form 7, AddToAny y Joinchat, y las páginas Inicio, Colección, Blog, Preguntas frecuentes y Contacto.
+
 | Qué cambié | Qué había antes | Por qué | Evidencia (captura o commit) |
 |---|---|---|---|
-| | | | |
+| Actualicé WordPress de 7.0.2 a 7.1.5 | WordPress 7.0.2 instalado por Softaculous | Contact Form 7 (6.2.6) no se podía instalar: el instalador decía "incompatible con tu versión de WordPress". Al actualizar se instaló sin problemas. | Pantalla "Añadir plugins" con el aviso de incompatibilidad; luego CF7 activo en Plugins |
+| Agregué WP Mail SMTP (Gmail) y Flamingo | Solo Contact Form 7 | InfinityFree gratis no envía correos con la función `mail()` de PHP. Activé el plan B de "correos que no llegan": WP Mail SMTP con `smtp.gmail.com`. Flamingo guarda cada mensaje en el panel aunque el correo falle. | Ajustes de WP Mail SMTP y Flamingo > Mensajes entrantes |
+| MailPoet pasa a la etapa 2 | MailPoet para el formulario de novedades | Sin envío de correo nativo en InfinityFree, MailPoet no puede mandar newsletters. Mientras tanto, el bloque "Entérate primero de cada drop" lleva a Instagram, que es donde hoy vende altima.str. El tema ya muestra el formulario de MailPoet apenas el plugin esté instalado. | `front-page.php` (sección 5) y `plan-de-continuidad.md` |
+| Agregué la página Nosotros | Estaba en "páginas para después" | La Entrega 1 pedía Inicio · Nosotros · Blog en el menú; la mantuve y la integré al diseño del tema. | Menú principal del sitio |
+| AddToAny solo en entradas | Se mostraba en todas las páginas | En Inicio y Contacto los botones de compartir distraían de la llamada a la acción. Quedó con WhatsApp, Facebook, X y correo. | Ajustes > AddToAny |
+| Colección como vitrina sin carro | Igual que en el plan | Se confirmó: cada gorra lleva a "Consultar" (Contacto). La tienda con carro queda para WooCommerce en la etapa 2. | Página Colección |
 
-**Decisión:** (se completa en el checkpoint del 18 nov: continúo con mi propuesta / pivoteo, y por qué)
+**Decisión:** continúo con mi propuesta de tema propio. El tema `altima-str` está activo en InfinityFree, se ve la identidad de DESIGN.md en escritorio y celular, y las 6 páginas y 3 entradas funcionan. No fue necesario activar el plan B del tema (Kadence o Blocksy); sí activé los planes B de correo (WP Mail SMTP) y de compatibilidad (actualizar WordPress), y MailPoet queda para la etapa 2.
