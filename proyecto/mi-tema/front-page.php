@@ -123,7 +123,7 @@ $contacto = home_url( '/contacto/' );
 		<?php if ( shortcode_exists( 'mailpoet_form' ) ) : ?>
 			<?php echo do_shortcode( '[mailpoet_form id="1"]' ); ?>
 		<?php else : ?>
-			<a class="boton" href="https://www.instagram.com/altima.club/" target="_blank" rel="noopener">Síguenos en Instagram</a>
+			<a class="boton" href="https://www.instagram.com/" target="_blank" rel="noopener">Síguenos en Instagram</a>
 		<?php endif; ?>
 	</div>
 </section>

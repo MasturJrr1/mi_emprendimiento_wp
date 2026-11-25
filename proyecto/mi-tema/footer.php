@@ -22,7 +22,7 @@
 				<a class="sitio-titulo" href="<?php echo esc_url( home_url( '/' ) ); ?>">ALTIMA.STR</a>
 				<p>Pa' usar o pa' guardar.</p>
 				<div class="redes">
-					<a href="https://www.instagram.com/altima.club/" target="_blank" rel="noopener">Instagram</a>
+					<a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
 					<a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
 				</div>
 			</div>

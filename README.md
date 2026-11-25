@@ -15,7 +15,7 @@ altima.str vende gorras New Era originales: fitted 59FIFTY de colección, edicio
 
 ## Mi tema
 
-**Tema propio:** `altima-str` (versión 1.3), construido desde `tema-base/` con los colores, tipografías y componentes de `DESIGN.md` y del prototipo de Stitch.
+**Tema propio:** `altima-str` (versión 1.4), construido desde `tema-base/` con los colores, tipografías y componentes de `DESIGN.md` y del prototipo de Stitch.
 
 - Código del tema: [`proyecto/mi-tema/`](proyecto/mi-tema/)
 - Tema listo para instalar: [`proyecto/altima-str.zip`](proyecto/altima-str.zip)
