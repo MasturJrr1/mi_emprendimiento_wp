@@ -3,7 +3,7 @@ Theme Name: altima-str
 Theme URI: https://github.com/MasturJrr1/mi_emprendimiento_wp
 Description: Tema propio de altima.str, tienda de gorras New Era originales para la comunidad streetwear en Chile. Construido desde el tema base del curso Sitios Web y Landing Pages (MKA1203, DUOC).
 Author: Ignacio Galindo
-Version: 1.1
+Version: 1.2
 Requires at least: 6.4
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -288,7 +288,8 @@ input[type="submit"]:active { background: var(--color-secundario); border-color:
 .tarjeta-producto .imagen {
   position: relative;
   aspect-ratio: 1 / 1;
-  background: var(--color-fondo);
+  background: var(--color-superficie);
+  border: 1px solid #F1ECE6;
   border-radius: var(--radio-md);
   overflow: hidden;
   margin-bottom: 14px;
@@ -402,12 +403,12 @@ input[type="submit"]:active { background: var(--color-secundario); border-color:
 .hero-drop .datos { margin-top: 22px; font-size: 14px; font-weight: 600; opacity: .9; }
 .hero-drop .hero-imagen {
   position: relative;
-  background: radial-gradient(circle at 50% 55%, #2a3d5c 0%, var(--color-secundario) 70%);
+  background: var(--color-superficie);
   border-radius: var(--radio-md);
   aspect-ratio: 1 / 1;
   display: flex; align-items: center; justify-content: center;
 }
-.hero-drop .hero-imagen img { width: 85%; }
+.hero-drop .hero-imagen img { width: 90%; }
 .hero-drop .hero-imagen .etiqueta { position: absolute; bottom: 14px; right: 14px; background: var(--color-primario); color: #fff; }
 
 /* Sellos de confianza */

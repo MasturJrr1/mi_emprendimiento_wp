@@ -10,10 +10,10 @@ $img = get_template_directory_uri() . '/assets/img/';
 
 // Novedades del Drop 004 (en la etapa 2 vendrán de WooCommerce).
 $novedades = array(
-	array( 'nombre' => 'Yankees 59FIFTY Undervisor Gris', 'linea' => 'MLB · Fitted',       'precio' => '$39.990', 'img' => 'gorra-marino.svg', 'tag' => 'Quedan 2',  'tag_clase' => 'etiqueta-stock' ),
-	array( 'nombre' => 'Dodgers 9FORTY Tierra',            'linea' => 'MLB · Casual',       'precio' => '$29.990', 'img' => 'gorra-cafe.svg',   'tag' => 'Nueva',     'tag_clase' => '' ),
-	array( 'nombre' => 'Bulls 9FIFTY Snapback 90s',        'linea' => 'NBA · Snapback',     'precio' => '$34.990', 'img' => 'gorra-negra.svg',  'tag' => 'Retro 90s', 'tag_clase' => 'etiqueta-oscura' ),
-	array( 'nombre' => 'Red Sox 59FIFTY Low Profile',      'linea' => 'MLB · Low Profile',  'precio' => '$39.990', 'img' => 'gorra-rosa.svg',   'tag' => 'Colección', 'tag_clase' => '' ),
+	array( 'nombre' => 'Yankees 59FIFTY Crema Side Patch World Series', 'linea' => 'MLB · Fitted',   'precio' => '$54.990', 'img' => 'yankees-59fifty-crema-side-patch.webp', 'tag' => 'Quedan 2',  'tag_clase' => 'etiqueta-stock' ),
+	array( 'nombre' => 'Yankees 59FIFTY Rosa Tonal',                    'linea' => 'MLB · Fitted',   'precio' => '$42.990', 'img' => 'yankees-59fifty-rosa-tonal.webp',       'tag' => 'Nueva',     'tag_clase' => '' ),
+	array( 'nombre' => 'Dodgers 9FIFTY Stone',                          'linea' => 'MLB · Snapback', 'precio' => '$34.990', 'img' => 'dodgers-9fifty-stone.webp',             'tag' => 'Nueva',     'tag_clase' => '' ),
+	array( 'nombre' => 'Yankees 9FIFTY Black on Black',                 'linea' => 'MLB · Snapback', 'precio' => '$34.990', 'img' => 'yankees-9fifty-black-on-black.webp',    'tag' => 'Clásica',   'tag_clase' => 'etiqueta-oscura' ),
 );
 $contacto = home_url( '/contacto/' );
 ?>
@@ -32,8 +32,8 @@ $contacto = home_url( '/contacto/' );
 			<p class="datos">Quedan 8 unidades del drop · Envío a todo Chile</p>
 		</div>
 		<div class="hero-imagen">
-			<img src="<?php echo esc_url( $img . 'gorra-hero.svg' ); ?>" alt="Gorra 59FIFTY azul marino del Drop 004" width="480" height="480">
-			<span class="etiqueta">Edición 59FIFTY</span>
+			<img src="<?php echo esc_url( $img . 'yankees-59fifty-ola-japonesa.webp' ); ?>" alt="Gorra New Era Yankees 59FIFTY azul marino con ola japonesa bordada, protagonista del Drop 004" width="600" height="600" fetchpriority="high">
+			<span class="etiqueta">Yankees 59FIFTY · Ola japonesa</span>
 		</div>
 	</div>
 </section>
